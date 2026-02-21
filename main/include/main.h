@@ -25,6 +25,9 @@
 // For WiFi connectivity.
 #include "wifi_connect.h"
 #include "wifi_connection.h"
+// For MQTT.
+#include "esp_event.h"
+#include "mqtt_client.h"
 // For exiting to the launcher.
 #include "soc/rtc.h"
 #include "soc/rtc_cntl_reg.h"
@@ -34,3 +37,7 @@ void disp_flush();
 
 // Exits the app, returning to the launcher.
 void exit_to_launcher();
+
+// MQTT event handler.
+void mqtt_event_handler(void *event_handler_arg, esp_event_base_t event_base,
+                        int32_t event_id, void *event_data);
