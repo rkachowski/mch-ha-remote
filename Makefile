@@ -16,7 +16,7 @@ clean:
 	rm -rf "$(BUILDDIR)"
 
 build:
-	source "$(IDF_PATH)/export.sh" && idf.py build
+	source "$(IDF_PATH)/export.sh" && idf.py -D CMAKE_POLICY_VERSION_MINIMUM=3.5 build
 
 install: build
 	python3 tools/webusb_push.py "Template App" build/main.bin --run
