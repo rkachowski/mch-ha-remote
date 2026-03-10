@@ -63,3 +63,9 @@ find your app and it should appear in the apps menu.
 
 Obviously you _can_ use idf.py flash but you’ll delete the launcher app and would
 need to reinstall it later.
+
+## links
+
+* https://badge.team/docs/badges/mch2022/software-development/esp-idf/esp_idf_getting_started/
+* https://github.com/badgeteam/mch2022-esp32-app-tickets/blob/master/main/main.c
+* https://badge.team/docs/badges/mch2022/software-development/esp-idf/
